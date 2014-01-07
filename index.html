@@ -10,18 +10,19 @@
   @media all and (max-width:1024px){ body, pre a{width:60%;} }
   small{color:#999;}
   #toolbar{margin-bottom:1em;position:fixed;left:20px;margin-top:5px;}
-  #toolbar [class^="icon-"]:before, #toolbar [class*=" icon-"]:before{font-family:'pen'}
   #mode{color:#1abf89;;cursor:pointer;}
   #mode.disabled{color:#666;}
-  #mode:before{content: '\e813';}
+  #mode:before{content: 'On';}
+  #mode.disabled:before{content: 'Off';}
   #fork{position:fixed;right:0;top:0;}
   </style>
-  <link rel="stylesheet" href="build/pen.css" />
+  <!--link rel="stylesheet" href="build/pen.css" /-->
+  <link rel="stylesheet" href="build/pen-fontawesome.css" />
 </head>
 <body>
 
 <div id="toolbar">
-  <span id="mode" class="icon-mode"></span>
+  <span id="mode"></span>
 </div>
 
 <div data-toggle="pen" placeholder="im a placeholder">

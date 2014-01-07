@@ -137,7 +137,7 @@
     var that = this, icons = '';
 
     for(var i = 0, list = this.config.list; i < list.length; i++) {
-      var name = list[i], klass = 'pen-icon icon-' + name;
+      var name = list[i], klass = 'pen-icon pen-icon-' + name;
       icons += '<i class="' + klass + '" data-action="' + name + '">' + (name.match(/^h[1-6]|p$/i) ? name.toUpperCase() : '') + '</i>';
       if((name === 'createlink')) icons += '<input class="pen-input" placeholder="http://" />';
     }
@@ -239,7 +239,7 @@
     if (linkInput) linkInput.style.display = 'none';
 
     highlight = function(str) {
-      var selector = '.icon-' + str
+      var selector = '.pen-icon-' + str
         , el = menu.querySelector(selector);
       return el && el.classList.add('active');
     };

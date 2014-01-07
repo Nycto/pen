@@ -1,0 +1,45 @@
+/*! Licensed under MIT, https://github.com/sofish/pen */
+
+$icon-font: "FontAwesome";
+$icon-location: '\f041';             // http://fontawesome.io/icon/map-marker/
+$icon-fit: '\f066';                  // http://fontawesome.io/icon/compress
+$icon-bold: '\f032';                 // http://fontawesome.io/icon/bold/
+$icon-italic: '\f033';               // http://fontawesome.io/icon/italic/
+$icon-justifyleft: '\f036';          // http://fontawesome.io/icon/align-left/
+$icon-justifycenter: '\f037';        // http://fontawesome.io/icon/align-center/
+$icon-justifyright: '\f038';         // http://fontawesome.io/icon/align-right/
+$icon-justifyfull: '\f039';          // http://fontawesome.io/icon/align-justify/
+$icon-outdent: '\f03b';              // http://fontawesome.io/icon/outdent/
+$icon-indent: '\f03c';               // http://fontawesome.io/icon/indent/
+$icon-mode: '\f042';                 // http://fontawesome.io/icon/adjust/
+$icon-fullscreen: '\f0b2';           // http://fontawesome.io/icon/arrows-alt/
+$icon-insertunorderedlist: '\f0ca';  // http://fontawesome.io/icon/list-ul/
+$icon-insertorderedlist: '\f0cb';    // http://fontawesome.io/icon/list-ol/
+$icon-strikethrough: '\f0cc';        // http://fontawesome.io/icon/strikethrough/
+$icon-underline: '\f0cd';            // http://fontawesome.io/icon/underline/
+$icon-blockquote: '\f10e';           // http://fontawesome.io/icon/quote-right/
+$icon-undo: '\f112';                 // http://fontawesome.io/icon/reply/
+$icon-pre: '\f121';                  // http://fontawesome.io/icon/code/
+$icon-unlink: '\f127';               // http://fontawesome.io/icon/chain-broken/
+$icon-superscript: '\f12b';          // http://fontawesome.io/icon/superscript/
+$icon-subscript: '\f12c';            // http://fontawesome.io/icon/subscript/
+$icon-inserthorizontalrule: '\f141'; // http://fontawesome.io/icon/ellipsis-h/
+$icon-pin: '\f08d';                  // http://fontawesome.io/icon/thumb-tack/
+$icon-createlink: '\f0c1';           // http://fontawesome.io/icon/chain/
+
+$fa-version: '4.0.3';
+$fa-baseurl: '//cdnjs.cloudflare.com/ajax/libs/font-awesome/#{$fa-version}/fonts';
+
+@font-face {
+    font-family: "FontAwesome";
+    src: url('#{$fa-baseurl}/fontawesome-webfont.eot?v=#{$fa-version}');
+    src: url('#{$fa-baseurl}/fontawesome-webfont.eot?#iefix&v=#{$fa-version}') format('embedded-opentype'),
+        url('#{$fa-baseurl}/fontawesome-webfont.woff?v=#{$fa-version}') format('woff'),
+        url('#{$fa-baseurl}/fontawesome-webfont.ttf?v=#{$fa-version}') format('truetype'),
+        url('#{$fa-baseurl}/fontawesome-webfont.svg?v=#{$fa-version}#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import 'core';
+
